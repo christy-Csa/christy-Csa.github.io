@@ -5,70 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christy Mecaller | Purple Flowers Portfolio</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
+  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Header -->
-  <header>
-    <img src="profile.jpg" alt="Christy Mecaller" class="profile-pic">
+  <header id="home">
     <h1>Christy Mecaller</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
+    <p>Blooming Creativity in Web Development</p>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
+  <section id="about">
+    <h2>Purple Flower Soul 🌸</h2>
     <p>
-      Hello! I'm Christy Mecaller from Palapas Pioduran. I am passionate about web development and design.
-      I enjoy creating modern, interactive websites and bringing ideas to life with code.
-      Constant learning and exploring new technologies keep me motivated!
+      Hi! I’m <strong>Christy Mecaller</strong>, a creative soul who loves
+      coding, design, and bringing ideas to life—just like flowers blooming
+      in spring.
     </p>
+    <img src="profile.jpg" alt="Profile" width="200">
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>These are the petals of my creativity</p>
 
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
+    <div class="skills-bar">
+      <div class="skills-fill" data-skill="90%">HTML & CSS</div>
     </div>
 
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
+    <div class="skills-bar">
+      <div class="skills-fill" data-skill="80%">JavaScript</div>
+    </div>
+
+    <div class="skills-bar">
+      <div class="skills-fill" data-skill="85%">Creative Design</div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p>Reach out through any platform below:</p>
-
-    <a href="mailto:mecallerchristy9@gmail.com">Email</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>
-    <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank">Facebook</a>
-
-    <p class="phone">Phone: 09558577306</p>
+    <p>Email:
+      <a href="mailto:penarandajohnroland@gmail.com">
+        penarandajohnroland@gmail.com
+      </a>
+    </p>
+    <p>“Let’s grow something beautiful together.”</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2026 Christy Mecaller. All rights reserved.
+    <p>© 2025 Christy Mecaller | Purple Flowers Theme 🌸</p>
   </footer>
+
+  <script>
+    // Animate skill bars on scroll
+    window.addEventListener("scroll", function () {
+      let skills = document.querySelectorAll(".skills-fill");
+      skills.forEach(skill => {
+        let rect = skill.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          skill.style.width = skill.getAttribute("data-skill");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
