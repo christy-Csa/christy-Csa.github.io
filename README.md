@@ -1,16 +1,16 @@
-# 🌸 Christy Mecaller – Purple Flowers Portfolio
+# 🌸 Purple Flowers Portfolio
 
-A simple and elegant student portfolio website with a purple floral theme.
+Personal portfolio website of **Christy Mecaller**.
 
 ## ✨ Features
-- Responsive design
-- Purple flowers aesthetic
-- Clean and modern layout
-- Student-friendly portfolio
+- Purple floral aesthetic design
+- Responsive layout
+- Clean HTML & CSS structure
+- Contact links (Email, GitHub, LinkedIn, Facebook)
 
-## 🛠️ Built With
+## 🛠 Technologies Used
 - HTML5
 - CSS3
 - Google Fonts (Roboto)
 
-## 📁 Project Structure
+## 📂 File Structure
