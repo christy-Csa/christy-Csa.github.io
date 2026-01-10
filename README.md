@@ -1,192 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christy Mecaller | Purple Flowers Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christy Mecaller | Purple Flower Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    body {
-      background: linear-gradient(135deg, #a77bff, #d6b3ff);
-      color: #fff;
-      overflow-x: hidden;
-    }
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-    /* Floral subtle background using overlay image */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://i.ibb.co/PM3zJ2k/purple-flowers.png') center/cover no-repeat;
-      opacity: 0.1;
-      z-index: -1;
-    }
+    body {
+      background: radial-gradient(circle at top, #2b003f 0%, #120018 100%);
+      color: #fff;
+      overflow-x: hidden;
+    }
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(5px);
-      border-radius: 20px;
-      margin: 20px;
-    }
+    /* Flower background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url('https://i.ibb.co/zF9ZC2H/purple-flower-bg.png') repeat;
+      opacity: 0.25;
+      z-index: -1;
+      animation: floatBg 120s linear infinite;
+    }
 
-    header h1 {
-      font-size: 3rem;
-      color: #6a0dad; /* deep purple */
-      text-shadow: 0 0 10px #d6b3ff, 0 0 20px #a77bff;
-      margin-bottom: 10px;
-    }
+    @keyframes floatBg {
+      from { background-position: 0 0; }
+      to { background-position: 4000px 2000px; }
+    }
 
-    header p {
-      font-size: 1.2rem;
-      color: #eee;
-      text-shadow: 0 0 5px #fff;
-    }
+    header {
+      text-align: center;
+      padding: 90px 20px;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
+    }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px 0;
-    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #c77dff;
+      box-shadow: 0 0 25px #c77dff;
+      margin-bottom: 20px;
+    }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+    header h1 {
+      font-size: 3rem;
+      color: #e0aaff;
+      text-shadow: 0 0 12px #c77dff;
+      margin-bottom: 10px;
+    }
 
-    nav a:hover {
-      color: #d6b3ff;
-      text-shadow: 0 0 10px #d6b3ff;
-    }
+    header p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
 
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px 0;
+    }
 
-    section h2 {
-      text-align: center;
-      color: #6a0dad;
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px #a77bff;
-    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-    .about, .projects, .contact {
-      margin-bottom: 50px;
-      background: rgba(255,255,255,0.1);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-      backdrop-filter: blur(5px);
-    }
+    nav a:hover {
+      color: #e0aaff;
+      text-shadow: 0 0 10px #c77dff;
+    }
 
-    .projects .project {
-      background: rgba(255,255,255,0.15);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(106,13,173,0.5);
-    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-    .projects .project h3 {
-      color: #d6b3ff;
-    }
+    section h2 {
+      text-align: center;
+      color: #c77dff;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #c77dff;
+    }
 
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background: #6a0dad;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+    .about, .projects, .contact {
+      background: rgba(255,255,255,0.06);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 0 20px rgba(199,125,255,0.25);
+      backdrop-filter: blur(6px);
+      margin-bottom: 50px;
+    }
 
-    .contact a:hover {
-      background: #d6b3ff;
-      color: #6a0dad;
-      box-shadow: 0 0 15px #d6b3ff, 0 0 30px #6a0dad;
-    }
+    .info {
+      text-align: center;
+      margin-top: 15px;
+      color: #f1e6ff;
+      line-height: 1.8;
+    }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #eee;
-      text-shadow: 0 0 5px #fff;
-    }
+    .projects .project {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(199,125,255,0.6);
+    }
 
-  </style>
+    .projects h3 {
+      color: #e0aaff;
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 26px;
+      background: #c77dff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #e0aaff;
+      box-shadow: 0 0 18px #e0aaff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Christy Mecaller</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
-  </header>
+  <!-- Header -->
+  <header>
+    <img src="IMG_1746250030080" alt="Profile Photo" class="profile-img">
+    <h1>Christy Mecaller</h1>
+    <p>Student | Aspiring Web Developer</p>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Christy Mecaller from Palapas Pioduran. I am passionate about web development and design. I enjoy creating modern, interactive websites and bringing ideas to life with code. Constant learning and exploring new technologies keep me motivated!</p>
-  </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I’m <strong>Christy Mecaller</strong>, a student passionate about web development and creative design.
+      I love working with HTML, CSS, and JavaScript to create beautiful and functional websites inspired by nature and creativity.
+    </p>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+    <div class="info">
+      📍 <strong>Address:</strong> Palapas, Pioduran, Albay <br>
+      📞 <strong>Contact:</strong> 0955 857 7306
+    </div>
+  </section>
 
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
-    </div>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
 
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
-    </div>
+    <div class="project">
+      <h3>Student Portfolio Website</h3>
+      <p>A personal portfolio showcasing my skills, profile, and school projects using HTML and CSS.</p>
+    </div>
 
-  </section>
+    <div class="project">
+      <h3>Simple Web Page Design</h3>
+      <p>A beginner-friendly project focused on layout, colors, and responsive design.</p>
+    </div>
+  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Reach out through any platform below:</p>
-    <a href="mailto:mecallerchristy9@gmail.com">Email</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>
-    <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank">Facebook</a>
-    <p>Phone: 09558577306</p>
-  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me through:</p>
+    <a href="mailto:mecallerchristy9@gmail.com">Email</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank">Facebook</a>
+  </section>
 
-  <footer>
-    &copy; 2026 Christy Mecaller. All rights reserved.
-  </footer>
+  <footer>
+    &copy; 2026 Christy Mecaller. All rights reserved.
+  </footer>
 
 </body>
 </html>
-IMG_1746250030080.jpg
