@@ -15,7 +15,7 @@
 
   <!-- Header -->
   <header>
-    <img src="https://uploads.onecompiler.io/44a649xfa/44a64egrk/Videoshot_20250829_073001.jpg" alt="Christy Mecaller" class="profile-img">
+    <img src="profile.jpg" alt="Christy Mecaller" class="profile-pic">
     <h1>Christy Mecaller</h1>
     <p>Web Developer | Designer | Tech Enthusiast</p>
   </header>
@@ -31,9 +31,9 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Hello! I'm Christy Mecaller from Palapas Pioduran. I am passionate about web
-      development and design. I enjoy creating modern, interactive websites and
-      bringing ideas to life with code.
+      Hello! I'm Christy Mecaller from Palapas Pioduran. I am passionate about web development and design.
+      I enjoy creating modern, interactive websites and bringing ideas to life with code.
+      Constant learning and exploring new technologies keep me motivated!
     </p>
   </section>
 
@@ -43,12 +43,12 @@
 
     <div class="project">
       <h3>Project One</h3>
-      <p>A brief description of your project goes here.</p>
+      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
     </div>
 
     <div class="project">
       <h3>Project Two</h3>
-      <p>A brief description of your project goes here.</p>
+      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
     </div>
   </section>
 
@@ -62,9 +62,10 @@
     <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>
     <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank">Facebook</a>
 
-    <p class="phone">📞 09558577306</p>
+    <p class="phone">Phone: 09558577306</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     &copy; 2026 Christy Mecaller. All rights reserved.
   </footer>
