@@ -1,16 +1,16 @@
 # 🌸 Purple Flowers Portfolio
 
-Personal portfolio website of **Christy Mecaller**.
+A personal portfolio website of **Christy Mecaller** inspired by purple flowers and blooming creativity.
 
 ## ✨ Features
+- Sticky navigation bar
+- Animated skill bars on scroll
 - Purple floral aesthetic design
-- Responsive layout
-- Clean HTML & CSS structure
-- Contact links (Email, GitHub, LinkedIn, Facebook)
+- Responsive and clean layout
 
-## 🛠 Technologies Used
+## 🛠 Built With
 - HTML5
 - CSS3
-- Google Fonts (Roboto)
+- JavaScript
 
-## 📂 File Structure
+## 📂 Project Structure
